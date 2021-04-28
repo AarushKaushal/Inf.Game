@@ -24,7 +24,7 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   background(47, 156, 149);
-
+Engine.update(engine);
   for (let x=0; x < width; x++) {
 	let noiseVal = noise((mouseX+x)*noiseScale, 6*noiseScale);
 	stroke(0,255,0);
